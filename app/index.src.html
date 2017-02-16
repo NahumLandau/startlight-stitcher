@@ -1,0 +1,165 @@
+<html>
+<head>
+	<title>Stitcher</title>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" >
+
+
+    <!-- // <script src="js/activities.js"></script> -->
+    <script src="https://assets-secure.applicaster.com/js2native/v1/js2native.js"></script>
+	<script src="//assets-secure.applicaster.com/questions/sdk/v1.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<script src="js/jquery.touchSwipe.min.js"></script>
+	
+	<script src="js/imagesLooaded.pgkd.min.js"></script>
+	<!--<script src="js/scripts_test.js?4"></script>-->
+	 <script src="js/analytics.js"></script>
+	 <script src="js/googleAnalytics.js?3"></script>
+	<script src="js/scripts_v3.js?6"></script>
+	<script src="js/promise.polifyll.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body onload="onDomLoaded()">
+	<div class="container">
+
+		<div class="loader" style=" position: absolute;top: 50%;margin-top: -32px;left: 50%;margin-left: -32;">
+			<div class="preloader-wrapper big active">
+			    <div class="spinner-layer spinner-blue-only">
+			      	<div class="circle-clipper left">
+			        	<div class="circle"></div>
+			      	</div>
+			      	<div class="gap-patch">
+			        	<div class="circle"></div>
+			      	</div>
+			      	<div class="circle-clipper right">
+			        	<div class="circle"></div>
+			      	</div>
+			    </div>
+			</div>
+		</div>	
+
+		<div class="screen introduction_screen" data-id="1" style="display:none;">
+			<div id="wrapper">
+				<div id="swiper_container">
+					<table id="tbl">
+						<tr><td><div id="swiper_pages"><ul></ul></div></td></tr>
+					</table>
+					<div class="swiper">
+						
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- FORM -->
+		<div class="screen form_screen" data-id="2" style="display:none;">
+
+			<div class="form_bg">
+				<img src="" class="form_bg_portrait">
+				<img src="" class="form_bg_landscape">
+			</div>
+
+			<div class="form_screen_container">
+				<div class="sign_in_fb">
+					<a class="waves-effect waves-light btn-large"><img src="images/facebook_icon.png" class="fb_icon">Login With Facebook</a>
+				</div>
+
+
+				<table class="or_element" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="line"><hr></td>
+						<td class="text">Or</td>
+						<td class="line"><hr></td>
+					</tr>
+				</table>
+
+
+				<div class="form_container">
+					<div class="input-field">
+			          	<input id="name" type="text">
+			          	<label for="name">Name</label>
+			        </div>
+
+			        <div class="input-field">
+			          	<input id="phone" type="tel" maxlength="17" style="direction:ltr;">
+			          	<label for="phone">Phone</label>
+			        </div>
+
+			         <div class="input-field">
+			          	<input id="mail" type="email" style="direction:ltr;" >
+			          	<label for="mail" data-error="Your email is invalid." data-success="Your email is valid.">Email</label>
+			        </div>
+
+			        <div class="input-field">
+			        	<input type="checkbox" id="agree_terms" />
+	      				<label for="agree_terms">I agree the <a href="http://www.google.com" target="_blank">terms.</a></label>
+			        </div>
+
+			        <div class="show_errors_container">
+			        	<div class="card-panel red show_errors">
+					        <span class="white-text"></span>
+				        </div>
+			        </div>
+			        
+			       
+
+			        <div class="send_form_btn">
+			        	<a class="waves-effect waves-light btn">Send</a>
+			        </div>
+				</div>
+			</div>
+			
+
+			<div class="popup">
+	          	<iframe src="" width="100%" frameborder="0"></iframe>
+	        </div>
+
+			
+		</div>
+
+
+
+
+		<!-- QUESTIONS -->
+		<div class="screen questions_screen" data-id="3" style="display:none;">
+			<div class="flip-container" >
+				<div class="flipper">
+					<div class="front">
+						<div class="question question_front">
+							<iframe src=""></iframe>
+						</div>
+					</div>
+					<div class="back">
+						<div class="question question_back">
+							<iframe src=""></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- THANK PAGE -->
+		<div class="screen thank_page" style="display:none;">
+			
+			<div class="form_bg">
+				<img src="" class="form_bg_portrait">
+				<img src="" class="form_bg_landscape">
+			</div>
+			
+			<div class="thank_text">thanks</div>
+		</div>
+	</div>
+
+	 <div class="popup_header">
+      < Back
+    </div>
+</body>
+</html>
